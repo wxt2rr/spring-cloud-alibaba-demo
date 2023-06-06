@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoController {
 
 
-    @RequestMapping("A")
+    @RequestMapping("pay")
     @ResponseBody
-    public String methodA() {
-        return "methodA";
+    public String pay() {
+        return "支付完成";
     }
 
-    @RequestMapping("B")
+    @RequestMapping("userinfo")
     @ResponseBody
-    public String methodB() {
-        return "methodB";
+    public String userinfo() {
+        return "用户为：" + DemoController.class.getName();
     }
 }

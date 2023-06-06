@@ -19,7 +19,7 @@
     </modules>
 
     <properties>
-        <spring-cloud.version>2.1.1.RELEASE</spring-cloud.version>
+        <spring-cloud.version>2.2.9.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencyManagement>
@@ -39,6 +39,39 @@
             </exclusions>
         </dependency>
 
+        <!--sentinel的核心类库 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+        <!-- sentinel和dubbo适配是需要引入这两个包，对于dubbo2.7.x以上的版本-->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-transport-simple-http</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-annotation-aspectj</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+        <!--sentinel 支持采用 nacos 作为规则数据源-->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
+        <!-- Sentinel 对 Dubbo 的支持 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-apache-dubbo-adapter</artifactId>
+            <version>1.8.5</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -50,6 +83,18 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>2.2.9.RELEASE</version>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-datasource-nacos</artifactId>
+            <version>1.8.5</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-spring-webmvc-adapter</artifactId>
+            <version>1.8.5</version>
         </dependency>
     </dependencies>
 

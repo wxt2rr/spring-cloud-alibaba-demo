@@ -32,7 +32,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- sentinel和dubbo适配是需要引入这两个包，对于dubbo2.7.x以上的版本-->
+        <!--&lt;!&ndash; sentinel和dubbo适配是需要引入这两个包，对于dubbo2.7.x以上的版本&ndash;&gt;
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-transport-simple-http</artifactId>
@@ -42,8 +42,20 @@
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-annotation-aspectj</artifactId>
             <version>1.7.2</version>
-        </dependency>
+        </dependency>-->
 
+        <!-- 引入dubbo -->
+        <!--<dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-apache-dubbo-adapter</artifactId>
+            <version>1.8.5</version>
+        </dependency>-->
+
+        <!--<dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-web-servlet</artifactId>
+            <version>1.8.5</version>
+        </dependency>-->
     </dependencies>
 
     <build>
